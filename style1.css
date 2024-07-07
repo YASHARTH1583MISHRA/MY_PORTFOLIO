@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.website_container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Sidebar Styles */
+.sidebar_container {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar_container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.sidebar_content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar_content h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.sidebar_content p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.sidebar_navigation {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar_navigation li {
+    width: 100%;
+}
+
+.sidebar_navigation li a {
+    display: block;
+    padding: 10px 15px;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar_navigation li a:hover,
+.sidebar_navigation li a.active {
+    background-color: #34495e;
+}
+
+/* Main Content Styles */
+.website_container {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 250px);
+    padding: 20px;
+}
+
+.certificate_container {
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.certificate {
+    display: flex;
+    width: 100%;
+}
+
+.certificate_image {
+    flex: 1;
+    max-width: 200px;
+    overflow: hidden;
+}
+
+.certificate_image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.certificate_details {
+    flex: 2;
+    padding: 20px;
+}
+
+.certificate_title {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+.certificate_description {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+.certificate_date {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #95a5a6;
+}
+
+.social_media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social_media a {
+    color: #ecf0f1;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social_media a:hover {
+    color: #3498db;
+}
+#scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #333; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
