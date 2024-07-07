@@ -22,7 +22,7 @@
 
 <body>
     <!-- Website Layout -->
-    <ul class="website_container">
+    <div class="website_container">
         <!-- Global Menu -->
         <div id="global_menu_button_container">
             <p class="site_title">Yasharth Mishra</p>
@@ -37,13 +37,13 @@
                 <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
                 <li><a href="blogs.html"><i class="fas fa-pen-nib"></i> Blogs</a></li>
                 <li><a href="services.html"><i class="fas fa-cog"></i> Services</a></li>
-                <li><a href="contact.html"><i class="fas fa-phone-square"></i> Contact</a></li>
+                <li><a href="contact.html" class="active"><i class="fas fa-phone-square"></i> Contact</a></li>
                 <li><a href="certi.html"><i class="fas fa-certificate"></i> Certificates</a></li>
             </div>
         </ul>
+        <!-- Global Menu -->
 
-        <!--x Global Menu x-->
-        <!-- sidebar -->
+        <!-- Sidebar -->
         <div class="sidebar_container">
             <!-- Sidebar Image -->
             <div class="image">
@@ -52,71 +52,75 @@
                 <div class="left_image_box"></div>
             </div>
 
-            <!-- sidebar Content -->
+            <!-- Sidebar Content -->
             <div class="sidebar_content">
-                <!-- Long name can be applied so easily -->
                 <h1>Yasharth Mishra</h1>
                 <p>Data Science Enthusiast</p>
-                <!-- Social Medias -->
+                <!-- Social Media Links -->
                 <div class="social_media">
                     <a href="https://github.com/yasharth1583mishra"><i class="fab fa-github"></i></a>
                     <a href="https://instagram.com/yasharth._.mishra"><i class="fab fa-instagram"></i></a>
                     <a href="https://linkedin.com/in/yasharth-mishra"><i class="fab fa-linkedin"></i></a>
-
                 </div>
             </div>
 
-            <!-- Sidebar Buttom Menu -->
-            <div class="sidebar_buttom_menu" id="sidebar_buttom_menu">
+            <!-- Sidebar Button Menu -->
+            <div class="sidebar_button_menu" id="sidebar_button_menu">
                 <i class="fa fa-bars" id="sidebar_menu_icon"></i>
             </div>
 
             <!-- Sidebar Navigation -->
             <ul class="sidebar_navigation" id="sidebar_navigation">
                 <li><a href="index.html">Index</a></li>
-                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="blogs.html">Blogs</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
                 <li><a href="certi.html">Certificates</a></li>
             </ul>
-
         </div>
-        <!-- content -->
+        <!-- Sidebar -->
+
+        <!-- Content -->
         <div class="content_container">
             <!-- Contact Page -->
             <div class="contact_page">
                 <h2 class="title">Contact <span>Me</span></h2>
                 <hr class="line">
                 <div class="contact_container">
-                    <form action="error.html" method="POST">
+                    <!-- Formspree Form -->
+                    <form id="contact-form" method="POST" action="https://formspree.io/f/xyzgyool">
                         <div class="form_name_row">
                             <div class="left_form_row">
-                                <label>First Name</label>
-                                <input type="text" name="first_name" required placeholder="Enter First Name">
+                                <label for="first_name">First Name</label>
+                                <input type="text" id="first_name" name="first_name" required placeholder="Enter First Name">
                             </div>
                             <div class="right_form_row">
-                                <label>Last Name</label>
-                                <input type="text" name="last_name" required placeholder="Enter Last Name">
+                                <label for="last_name">Last Name</label>
+                                <input type="text" id="last_name" name="last_name" required placeholder="Enter Last Name">
                             </div>
                         </div>
-                        <label>Email</label>
-                        <input type="email" name="email" required placeholder="Enter Email">
-                        <label>Phone Number</label>
-                        <input type="text" name="phone" required placeholder="Enter Phone Number">
-                        <label>Subject</label>
-                        <input type="text" name="subject" required placeholder="Enter Subject">
-                        <label>Message</label>
-                        <textarea name="message" required placeholder="Enter Message"></textarea>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter Email">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" name="phone" required placeholder="Enter Phone Number">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Enter Subject">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Enter Message"></textarea>
                         <input type="submit" value="Send" id="send_button">
                     </form>
+                    <!-- End Formspree Form -->
                 </div>
             </div>
+            <!-- End Contact Page -->
         </div>
-    </ul>
+        <!-- End Content Container -->
+    </div>
+    <!-- End Website Layout -->
 
-
+    <!-- JavaScript file -->
     <script src="script.js"></script>
 </body>
 
